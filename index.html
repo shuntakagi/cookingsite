@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>takagi kitchen</title>
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="index.js"></script>
+</head>
+<body>
+	<header>
+		<h1 class="logo"><a href="#">Shun Kitchen</a></h1>
+		<div class="header-right">
+        	<div id="login-show" class="login">ログイン</div>
+        </div>
+        <div class="header-right">
+        	<div class="signup signup-show">新規登録</div>
+        </div>
+		<form class="search-form" action="#">
+		<input class="search-text" type="text" placeholder="料理名・食材でレシピを検索">
+		<input class="search-btn" type="submit" id="searchsubmit" value="&#xf002;"  />
+		</form>
+		<div class="clear"></div>
+	</header>
+    <div class="container">
+    	<div id="signup-modal"  class="signup-modal-wrapper">
+		    <div class="modal">
+		      <div class="close-modal">
+		        <i class="fa fa-2x fa-times"></i>
+		      </div>
+		      <div id="signup-form">
+		        <h2>Emailで新規登録</h2>
+		        <form action="#">
+		          <input class="form-control" type="text" placeholder="メールアドレス">
+		          <input class="form-control" type="password" placeholder="パスワード">
+		          <div id="submit-btn">新規登録</div>
+		        </form>
+		      </div>
+		    </div>
+		</div>
+    	<div id="login-modal" class="login-modal-wrapper">
+		    <div class="modal">
+		      <div class="close-modal">
+		        <i class="fa fa-2x fa-times"></i>
+		      </div>
+		      <div id="login-form">
+		        <h1>Emailログイン</h1>
+		        <form action="#">
+		          <input class="form-control" type="text" placeholder="メールアドレス">
+		          <input class="form-control" type="password" placeholder="パスワード">
+		          <div id="submit-btn">ログイン</div>
+		          <div class="signup-show" id="submit-btn-signup">新規登録する</div>
+		        </form>
+		      </div>
+		    </div>
+	    </div>
+    	
+    	<div class="colum">
+		    <div class="filters-wrapper">
+		    	<div id="top" class="filter-item active">TOP</div>
+		    	<div id="100" class="filter-item">¥100</div>
+		    	<div id="200" class="filter-item">¥200</div>
+		    	<div id="300" class="filter-item">¥300</div>
+		    	<div id="400" class="filter-item">¥400</div>
+		    	<div id="500" class="filter-item">¥500</div>
+		    	<div id="all" class="filter-item">ALL</div>
+
+		    </div>
+		    <div class="column-box-wrapper">
+		    	<div class="column-box 300 top">
+		    		<a href="detail.html">
+		    			<div class="column-image" style="background-image: url(images/IMG_3323.JPG)">
+		    				<div class="zoom-black">
+		    				</div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 100">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url(images/3333.jpg)">
+		    			<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box top">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url(images/IMG_3706.jpg)">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box ">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url(images/IMG_3676.JPG)">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box ">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 100 top">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 100 top">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 100 top">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 500 top">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 400">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 300">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 300">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 200">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 200">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 200">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 200">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 200">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 200">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 100">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url(">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 400">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 400">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    	<div class="column-box 400">
+		    		<a href="#">
+		    			<div class="column-image" style="background-image: url()">
+		    				<div class="zoom-black"></div>
+		    			</div>
+		    		</a>
+		    	</div>
+		    </div>
+		</div>
+    </div>
+
+    <footer>
+    	<div class="social-section">
+        <div class="follow-us">
+          <a href="https://www.instagram.com/shun.kitchin/?hl=ja" class="social-icon" target='blank'>
+            <i class="fa fa-instagram"></i>
+          </a>
+          <a href="https://www.facebook.com/profile.php?id=100009611529699" class="social-icon" target='blank'>
+            <i class="fa fa-facebook"></i>
+          </a>
+        </div>
+        </div>
+		<div class="clear"></div>
+		<p class="copyright">©2017-takagi kitchen</p>
+		
+	</footer>
+	
+</body>
+</html>
